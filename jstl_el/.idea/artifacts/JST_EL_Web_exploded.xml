@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="JST_EL:Web exploded">
+    <output-path>D:/apache-tomcat-9.0.22/webapps/JST_EL</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="JST_EL/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JST_EL" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
