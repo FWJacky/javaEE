@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.liu.mapper.UserMapper">
+
+    <!--开启本mapper的二级缓存-->
+    <cache/>
+
+    <select id="queryUserById" parameterType="int" resultType="com.liu.po.User">
+        select * from user where id = #{value}
+    </select>
+
+    <update id="updateUser" parameterType="com.liu.po.User">
+        update user set username = #{username},birthday=#{birthday},sex=#{sex},address=#{address} where id = #{id}
+    </update>
+</mapper>
